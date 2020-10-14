@@ -3,4 +3,4 @@
 apt install fish curl git -y
 curl -L https://get.oh-my.fish | fish -N
 echo "omf install lambda" | fish
-chsh -s /usr/bin/fish
+chsh -s '/usr/bin/fish'
