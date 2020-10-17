@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade
-
+sudo apt install pavucontorl remmina
 #dualboot clock fix
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
@@ -14,4 +14,12 @@ sduo apt update && sudo apt install spotify-client -y
 cd ~/Downloads && curl -L "https://discord.com/api/download?platform=linux&format=deb" >> discord.deb
 sudo apt install ./discord.deb
 
+#Cinnamon Config
+sudo dconf load /org/cinnamon/ < cinnamon_config_backup
 
+#git global conf and MassMover install
+git config --global user.name "Jurek Nitschky "
+git config --global user.email "jurek.nit@gmail.com"
+mkdir ~/GIT/
+cd ~/GIT/ && git clone https://github.com/jurek-nky/MassMover
+cd ~/GIT/MassMover && sudo cp MassMover /usr/bin/MassMover
