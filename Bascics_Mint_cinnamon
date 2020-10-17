@@ -8,14 +8,14 @@ sudo timedatectl set-local-rtc 1 --adjust-system-clock
 #spotify
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sduo apt update && sudo apt install spotify-client -y
+sudo apt update && sudo apt install spotify-client -y
 
 #Discord
 cd ~/Downloads && curl -L "https://discord.com/api/download?platform=linux&format=deb" >> discord.deb
 sudo apt install ./discord.deb
 
 #Cinnamon Config
-sudo dconf load /org/cinnamon/ < cinnamon_config_backup
+dconf load /org/cinnamon/ < ~/postinstall/cinnamon_config_backup
 
 #git global conf and MassMover install
 git config --global user.name "Jurek Nitschky "
