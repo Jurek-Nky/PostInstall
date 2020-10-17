@@ -15,7 +15,7 @@ cd ~/Downloads && curl -L "https://discord.com/api/download?platform=linux&forma
 sudo apt install ./discord.deb
 
 #Cinnamon Config
-sudo dconf load /org/cinnamon/ < cinnamon_config_backup
+dconf load /org/cinnamon/ < ~/postinstall/cinnamon_config_backup
 
 #git global conf and MassMover install
 git config --global user.name "Jurek Nitschky "
