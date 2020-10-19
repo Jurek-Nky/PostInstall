@@ -90,3 +90,28 @@ end
 function ..
 	cd ..
 end
+
+# exit
+function e
+	exit
+end
+
+#open this file
+function addfunction
+	nano ~/.config/fish/functions/fish_prompt.fish
+end
+
+#open tuir reddit view
+function reddit
+	tuir
+end
+
+#clear
+function c
+	clear
+end
+
+#fun telnet map
+function map
+	telnet mapscii.me
+end
