@@ -1,0 +1,132 @@
+[/]
+alttab-switcher-delay=0
+alttab-switcher-enforce-primary-monitor=false
+alttab-switcher-show-all-workspaces=false
+applet-cache-updated=1600554153
+command-history=['discord', 'terminal', 'screen', 'moodeplaer', 'moodeplayer']
+desklet-cache-updated=1602938253
+desklet-decorations=0
+desklet-snap=false
+desklet-snap-interval=25
+enabled-applets=['panel1:right:4:menu@cinnamon.org:0', 'panel1:right:2:show-desktop@cinnamon.org:1', 'panel1:right:0:grouped-window-list@cinnamon.org:2', 'panel1:right:0:systray@cinnamon.org:3', 'panel1:left:5:xapp-status@cinnamon.org:4', 'panel1:left:7:notifications@cinnamon.org:5', 'panel1:left:3:printers@cinnamon.org:6', 'panel1:left:4:removable-drives@cinnamon.org:7', 'panel1:left:6:keyboard@cinnamon.org:8', 'panel1:left:2:network@cinnamon.org:9', 'panel1:left:1:sound@cinnamon.org:10', 'panel1:right:1:power@cinnamon.org:11', 'panel1:center:0:calendar@cinnamon.org:12']
+enabled-desklets=['notes@schorschii:0:3287.000244140625:17', 'diskspace@schorschii:2:3631.000244140625:67', 'cpuload@kimse:3:3584.00048828125:279']
+next-applet-id=13
+next-desklet-id=5
+no-adjacent-panel-barriers=false
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 20, "center": 28, "right": 20}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:left']
+panels-height=['1:30', '2:25']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+prevent-focus-stealing=true
+show-snap-osd=true
+
+[desktop/a11y/keyboard]
+bouncekeys-delay=300
+bouncekeys-enable=false
+mousekeys-accel-time=300
+mousekeys-enable=false
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+stickykeys-enable=false
+
+[desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+
+[desktop/background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/linuxmint/sele_linuxmint_center.jpg'
+
+[desktop/background/slideshow]
+delay=15
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint.xml'
+random-order=true
+slideshow-enabled=true
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=24
+gtk-overlay-scrollbars=true
+gtk-theme='Mint-Y-Dark-Aqua'
+icon-theme='Mint-Y-Aqua'
+scaling-factor=uint32 0
+
+[desktop/keybindings]
+custom-list=['custom0', '__dummy__']
+magnifier-zoom-in=['<Alt><Super>plus']
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary>F11']
+command='pavucontrol'
+name='volume Control'
+
+[desktop/keybindings/media-keys]
+help=@as []
+search=['<Primary><Alt>s']
+www=['<Primary><Alt>f']
+
+[desktop/keybindings/wm]
+panel-run-dialog=['<Alt>F2', '<Super>r']
+switch-group=['<Super>Tab']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/sound]
+event-sounds=false
+maximum-volume=100
+
+[desktop/wm/preferences]
+action-middle-click-titlebar='lower'
+action-scroll-titlebar='shade'
+auto-raise=true
+button-layout=':minimize,maximize,close'
+focus-mode='click'
+focus-new-windows='strict'
+min-window-opacity=30
+mouse-button-modifier='<Alt>'
+theme='Mint-Y-Dark'
+
+[muffin]
+legacy-snap=false
+placement-mode='automatic'
+resize-threshold=24
+tile-hud-threshold=25
+tile-maximize=false
+
+[settings-daemon/peripherals/keyboard]
+delay=uint32 500
+numlock-state='off'
+repeat-interval=uint32 30
+
+[settings-daemon/peripherals/mouse]
+custom-acceleration=false
+custom-threshold=false
+double-click=191
+drag-threshold=8
+locate-pointer=false
+motion-threshold=10
+
+[settings-daemon/peripherals/touchpad]
+motion-threshold=1
+
+[settings-daemon/plugins/xsettings]
+menus-have-icons=false
+
+[theme]
+name='Mint-Y-Dark-Aqua'
