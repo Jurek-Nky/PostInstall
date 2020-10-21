@@ -1,4 +1,3 @@
-#dconf load /org/cinnamon < this_file
 [/]
 alttab-switcher-delay=0
 alttab-switcher-enforce-primary-monitor=false
@@ -23,7 +22,7 @@ panels-enabled=['1:0:left']
 panels-height=['1:30', '2:25']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
-prevent-focus-stealing=true
+prevent-focus-stealing=false
 show-snap-osd=true
 
 [desktop/a11y/keyboard]
@@ -51,13 +50,13 @@ exec='gnome-terminal'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/linuxmint/sele_linuxmint_center.jpg'
+picture-uri='file:///usr/share/backgrounds/linuxmint/linuxmint.jpg'
 
 [desktop/background/slideshow]
 delay=15
 image-source='xml:///usr/share/cinnamon-background-properties/linuxmint.xml'
 random-order=true
-slideshow-enabled=true
+slideshow-enabled=false
 
 [desktop/interface]
 cursor-blink-time=1200
@@ -98,7 +97,7 @@ action-scroll-titlebar='shade'
 auto-raise=true
 button-layout=':minimize,maximize,close'
 focus-mode='click'
-focus-new-windows='strict'
+focus-new-windows='smart'
 min-window-opacity=30
 mouse-button-modifier='<Alt>'
 theme='Mint-Y-Dark'
