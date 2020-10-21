@@ -111,7 +111,4 @@ function c
 	clear
 end
 
-#fun telnet map
-function map
-	telnet mapscii.me
-end
+

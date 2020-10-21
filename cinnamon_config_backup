@@ -1,3 +1,4 @@
+#dconf load /org/cinnamon < this_file
 [/]
 alttab-switcher-delay=0
 alttab-switcher-enforce-primary-monitor=false
