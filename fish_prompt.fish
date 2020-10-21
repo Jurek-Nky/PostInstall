@@ -115,3 +115,7 @@ end
 function map
 	telnet mapscii.me
 end
+#Path append
+function PathAppend
+	set -a PATH $argv
+end
