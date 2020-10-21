@@ -120,6 +120,8 @@ end
 function PathAppend
 	set -a PATH $argv
 end
-=======
 
->>>>>>> 610550a3d15b7bab520aeaf7533aad58f25c9dba
+#top replace
+function top
+	bpytop
+end

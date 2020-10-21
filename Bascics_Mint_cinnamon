@@ -3,7 +3,6 @@
 sudo apt update && sudo apt upgrade
 sudo apt install remmina -y
 sudo apt install fzf -y
-sudo apt install pavucontorl -y
 #dualboot clock fix
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
