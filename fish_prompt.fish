@@ -111,6 +111,7 @@ function c
 	clear
 end
 
+<<<<<<< HEAD
 #fun telnet map
 function map
 	telnet mapscii.me
@@ -119,3 +120,6 @@ end
 function PathAppend
 	set -a PATH $argv
 end
+=======
+
+>>>>>>> 610550a3d15b7bab520aeaf7533aad58f25c9dba
