@@ -120,3 +120,8 @@ end
 function top
 	bpytop
 end
+
+#size using du
+function size
+	sudo du -shc $PWD/*
+end
