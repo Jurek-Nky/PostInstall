@@ -1,5 +1,5 @@
 #!/bin/bash
 
 while read line;
-	do cp $line ~/GIT/postinstall/dotfiles/; 
+	do cp $line /home/jurek/GIT/postinstall/dotfiles/; 
 done < dotfiles_dirs
