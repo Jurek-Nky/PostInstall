@@ -3,26 +3,26 @@ alttab-switcher-delay=0
 alttab-switcher-enforce-primary-monitor=false
 alttab-switcher-show-all-workspaces=false
 alttab-switcher-style='icons'
-applet-cache-updated=1605092401
+applet-cache-updated=1609179625
 command-history=['discord', 'terminal', 'screen', 'moodeplaer', 'moodeplayer', 'gnome-term', 'gnome-terminal']
 desklet-cache-updated=1606152736
 desklet-decorations=0
 desklet-snap=false
 desklet-snap-interval=25
-enabled-applets=['panel2:left:1:menu@cinnamon.org:0', 'panel1:right:3:printers@cinnamon.org:6', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:left:4:keyboard@cinnamon.org:8', 'panel1:right:6:network@cinnamon.org:9', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:center:1:calendar@cinnamon.org:12', 'panel1:left:3:grouped-window-list@cinnamon.org:15', 'panel1:center:3:temperature@fevimu:17', 'panel1:right:2:systray@cinnamon.org:18', 'panel1:right:7:spacer@cinnamon.org:20', 'panel1:left:0:spacer@cinnamon.org:21', 'panel1:center:2:spacer@cinnamon.org:22', 'panel1:left:2:spacer@cinnamon.org:23']
+enabled-applets=['panel1:left:1:menu@cinnamon.org:0', 'panel1:right:5:printers@cinnamon.org:6', 'panel1:right:6:removable-drives@cinnamon.org:7', 'panel1:left:4:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:9', 'panel1:right:7:sound@cinnamon.org:10', 'panel1:center:1:calendar@cinnamon.org:12', 'panel1:left:3:grouped-window-list@cinnamon.org:15', 'panel1:right:9:spacer@cinnamon.org:20', 'panel1:left:2:spacer@cinnamon.org:23', 'panel1:right:3:collapsible-systray@feuerfuchs.eu:29', 'panel1:right:1:download-and-upload-speed@cardsurf:30', 'panel1:right:2:spacer@cinnamon.org:31', 'panel1:right:4:spacer@cinnamon.org:33']
 enabled-desklets=@as []
 enabled-extensions=['!workspace-grid@daemonl']
 extension-cache-updated=1605614220
 hotcorner-layout=['scale:true:0', 'scale:false:0', 'scale:false:0', 'expo:true:200']
-next-applet-id=27
+next-applet-id=34
 next-desklet-id=5
 no-adjacent-panel-barriers=false
 panel-edit-mode=false
-panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 16}, {"left": 16, "center": 0, "right": 0, "panelId": 2}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 10, "center": 26, "right": 20}, {"left": 10, "center": 28, "right": 28, "panelId": 2}]'
-panel-zone-text-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}, {"left": 0.0, "center": 0.0, "right": 0, "panelId": 2}]'
+panel-zone-icon-sizes='[{"left": 0, "center": 0, "right": 16, "panelId": 1}]'
+panel-zone-symbolic-icon-sizes='[{"left": 16, "center": 28, "right": 16, "panelId": 1}]'
+panel-zone-text-sizes='[{"left": 0.0, "center": 0.0, "right": 0.0, "panelId": 1}]'
 panels-autohide=['1:false', '2:true', '3:false', '4:false']
-panels-enabled=['1:0:top', '2:0:bottom']
+panels-enabled=['1:0:top']
 panels-height=['1:22', '2:20', '3:20', '4:20']
 panels-hide-delay=['1:1400', '2:0', '3:0', '4:0']
 panels-show-delay=['1:0', '2:0', '3:0', '4:0']
@@ -55,11 +55,12 @@ exec='gnome-terminal'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/jurek/Downloads/dolomite-mountains-italy-photo-credit-to-stefano-borghi-2-3840×2160.jpg'
+picture-uri='file:///usr/share/backgrounds/linuxmint-ulyssa/sferrara_matterhorn.jpg'
+primary-color='#000000000000'
 
 [desktop/background/slideshow]
 delay=15
-image-source='directory:///home/jurek/Downloads'
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-ulyssa.xml'
 random-order=true
 slideshow-enabled=false
 
@@ -74,16 +75,33 @@ scaling-factor=uint32 0
 text-scaling-factor=1.0
 
 [desktop/keybindings]
-custom-list=['custom0', '__dummy__']
+custom-list=['custom0', '__dummy__', 'custom1', 'custom2', 'custom3']
 magnifier-zoom-in=['<Alt><Super>plus']
+show-desklets=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Primary>F11']
 command='pavucontrol'
 name='volume Control'
 
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>t']
+command='gnome-terminal --title=htop -- htop'
+name='SystemMonitor'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>e']
+command='gnome-terminal --title=ranger -- ranger'
+name='Ranger'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>s']
+command='gnome-terminal --title=fzf --working-directory=/ -- fzf -e'
+name='Search'
+
 [desktop/keybindings/media-keys]
 help=@as []
+home=['XF86Explorer']
 search=['<Primary><Alt>s']
 terminal=['<Primary><Alt>t', '<Super>Return']
 www=['<Primary><Alt>f']
@@ -116,7 +134,7 @@ action-scroll-titlebar='shade'
 auto-raise=true
 button-layout=':minimize,maximize,close'
 focus-mode='click'
-focus-new-windows='strict'
+focus-new-windows='smart'
 min-window-opacity=30
 mouse-button-modifier='<Alt>'
 num-workspaces=1
