@@ -1,2 +1,2 @@
-bpytop
-pavucontrol
+#Cinnamon
+dconf load /org/cinnamon < Cinnamon_Conf
