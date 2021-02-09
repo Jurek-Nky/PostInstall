@@ -1,2 +1,2 @@
-#Cinnamon
-dconf load /org/cinnamon < Cinnamon_Conf
+# Cinnamon
+# dconf load /org/cinnamon < Cinnamon_Conf
