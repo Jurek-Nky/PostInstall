@@ -9,7 +9,25 @@ desklet-cache-updated=1606152736
 desklet-decorations=0
 desklet-snap=false
 desklet-snap-interval=25
-enabled-applets=['panel1:left:1:menu@cinnamon.org:0', 'panel1:right:5:printers@cinnamon.org:6', 'panel1:right:6:removable-drives@cinnamon.org:7', 'panel1:left:4:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:9', 'panel1:right:7:sound@cinnamon.org:10', 'panel1:center:1:calendar@cinnamon.org:12', 'panel1:left:3:grouped-window-list@cinnamon.org:15', 'panel1:right:9:spacer@cinnamon.org:20', 'panel1:left:2:spacer@cinnamon.org:23', 'panel1:right:3:collapsible-systray@feuerfuchs.eu:29', 'panel1:right:1:download-and-upload-speed@cardsurf:30', 'panel1:right:2:spacer@cinnamon.org:31', 'panel1:right:4:spacer@cinnamon.org:33']
+desktop-effects-close-effect='traditional'
+desktop-effects-close-time=120
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-map-effect='traditional'
+desktop-effects-map-time=100
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-effect='none'
+desktop-effects-maximize-time=100
+desktop-effects-maximize-transition='easeInExpo'
+desktop-effects-minimize-effect='traditional'
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-tile-effect='none'
+desktop-effects-tile-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-unmaximize-effect='none'
+desktop-effects-unmaximize-time=100
+desktop-effects-unmaximize-transition='easeNone'
+enabled-applets=['panel1:left:1:menu@cinnamon.org:0', 'panel1:right:5:printers@cinnamon.org:6', 'panel1:right:6:removable-drives@cinnamon.org:7', 'panel1:left:4:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:9', 'panel1:right:7:sound@cinnamon.org:10', 'panel1:center:1:calendar@cinnamon.org:12', 'panel1:left:3:grouped-window-list@cinnamon.org:15', 'panel1:right:3:collapsible-systray@feuerfuchs.eu:29']
 enabled-desklets=@as []
 enabled-extensions=['!workspace-grid@daemonl']
 extension-cache-updated=1605614220
@@ -22,13 +40,16 @@ panel-zone-icon-sizes='[{"left": 0, "center": 0, "right": 16, "panelId": 1}]'
 panel-zone-symbolic-icon-sizes='[{"left": 16, "center": 28, "right": 16, "panelId": 1}]'
 panel-zone-text-sizes='[{"left": 0.0, "center": 0.0, "right": 0.0, "panelId": 1}]'
 panels-autohide=['1:false', '2:true', '3:false', '4:false']
-panels-enabled=['1:0:top']
+panels-enabled=['1:0:bottom']
 panels-height=['1:22', '2:20', '3:20', '4:20']
 panels-hide-delay=['1:1400', '2:0', '3:0', '4:0']
 panels-show-delay=['1:0', '2:0', '3:0', '4:0']
 prevent-focus-stealing=false
 show-media-keys-osd='small'
 show-snap-osd=true
+
+[cinnamon-session]
+quit-time-delay=60
 
 [desktop/a11y/keyboard]
 bouncekeys-delay=300
@@ -71,6 +92,7 @@ cursor-theme='Adwaita'
 gtk-overlay-scrollbars=true
 gtk-theme='Mint-Y-Dark'
 icon-theme='Mint-Y-Dark-Blue'
+keyboard-layout-show-flags=false
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 
@@ -108,10 +130,21 @@ www=['<Primary><Alt>f']
 
 [desktop/keybindings/wm]
 close=['<Alt>F4', '<Super>q']
+decrease-opacity=@as []
+maximize=['<Super>m']
 minimize=['<Super>m']
+move-to-corner-ne=['<Super>9']
+move-to-corner-nw=['<Super>7']
+move-to-corner-se=['<Super>3']
+move-to-corner-sw=['<Super>1']
+move-to-side-e=['<Super>6']
+move-to-side-n=['<Super>8']
+move-to-side-s=['<Super>2']
+move-to-side-w=['<Super>4']
 panel-run-dialog=['<Alt>F2', '<Super>r']
 switch-group=@as []
 switch-to-workspace-down=['<Super>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
 
 [desktop/media-handling]
 autorun-never=false
@@ -165,6 +198,9 @@ motion-threshold=1
 [settings-daemon/peripherals/touchpad]
 motion-threshold=1
 touchpad-enabled=true
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=false
 
 [settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
