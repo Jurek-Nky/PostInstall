@@ -49,7 +49,7 @@ panel-zone-icon-sizes='[{"left": -1, "center": 0, "right": 0, "panelId": 2}]'
 panel-zone-symbolic-icon-sizes='[{"left": 10, "center": 28, "right": 28, "panelId": 2}]'
 panel-zone-text-sizes='[{"left":0,"center":0,"right":0,"panelId":2}]'
 panels-autohide=['1:false', '2:false', '3:false', '4:false']
-panels-enabled=['2:0:bottom']
+panels-enabled=['2:0:top']
 panels-height=['1:22', '2:24', '3:20', '4:20']
 panels-hide-delay=['1:1400', '2:0', '3:0', '4:0']
 panels-show-delay=['1:0', '2:0', '3:0', '4:0']
@@ -135,8 +135,14 @@ binding=['<Primary><Shift>Escape']
 command='gnome-system-monitor -p'
 name='taskmanager'
 
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Primary><Alt>f']
+command='firefox'
+name='Firefox'
+
 [desktop/keybindings/media-keys]
 help=@as []
+home=['<Super>e']
 search=@as []
 suspend=['XF86Sleep', '<Primary><Alt>s']
 terminal=['<Primary><Alt>t', '<Super>Return']
@@ -145,6 +151,7 @@ www=['<Primary><Alt>f']
 
 [desktop/keybindings/wm]
 close=['<Alt>F4', '<Super>q']
+lower=['<Primary><Super>m']
 minimize=['<Super>m']
 move-to-workspace-left=['<Primary><Alt>Left']
 move-to-workspace-right=['<Primary><Alt>Right']
