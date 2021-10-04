@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ ! -d "$HOME/.ssh/" ]; then
+	mkdir /home/jurek/.ssh/
+fi
+cat sshKnownHosts >> $HOME/.ssh/authorized_keys
