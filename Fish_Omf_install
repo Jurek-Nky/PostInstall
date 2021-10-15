@@ -1,0 +1,13 @@
+#!/bin/bash
+if ! command -v fish &> /dev/null
+then
+    echo "Fish is not installed"
+    return
+fi
+if ! command -v git &> /dev/null
+then 
+	echo "Git is not installed"
+	return
+fi
+curl -L https://get.oh-my.fish >> installOmf
+fish installOmf --path=$HOME/.local/share/omf --config=$HOME/.config/omf
