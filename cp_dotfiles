@@ -1,6 +1,6 @@
 #!/bin/bash
 shopt -s expand_aliases
-git clone --bare https://github.com/jurek-nky/.cfg $HOME/.cfg
+git clone --bare git@github.com:Jurek-Nky/.cfg.git $HOME/.cfg
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 config checkout
 config config status.showUntrackedFiles no
