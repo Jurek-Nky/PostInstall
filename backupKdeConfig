@@ -6,3 +6,4 @@ echo $(pwd)
 file=$($HOME/transfuse/transfuse.sh -b $USER | egrep "$USER.*\.gz")
 echo $file
 mv $file $path
+rm -rf $HOME/transfuse/
