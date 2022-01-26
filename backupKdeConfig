@@ -1,9 +1,0 @@
-#!/bin/bash
-path=`pwd`
-git clone https://gitlab.com/cscs/transfuse.git $HOME/transfuse
-cd $HOME/transfuse
-echo $(pwd)
-file=$($HOME/transfuse/transfuse.sh -b $USER | egrep "$USER.*\.gz")
-echo $file
-mv $file $path
-rm -rf $HOME/transfuse/
